@@ -2,7 +2,7 @@ angular.module("home").controller("homeController", ["$scope", "homeService", "$
 
     var myActivity = {};
 
-    $scope.scope = "I am $scope";
+    $scope.scope = "Check out the API at http://activityapi-2017.azurewebsites.net/excerciseAPI/webapi/activities";
 
     homeService.getActivities().then(function (response) {
         $scope.activities = response.data;
