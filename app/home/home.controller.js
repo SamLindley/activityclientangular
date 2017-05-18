@@ -2,7 +2,7 @@ angular.module("home").controller("homeController", ["$scope", "homeService", "$
 
     var myActivity = {};
 
-    $scope.scope = "THIS IS WORKING";
+    $scope.scope = "I am $scope";
 
     homeService.getActivities().then(function (response) {
         $scope.activities = response.data;
